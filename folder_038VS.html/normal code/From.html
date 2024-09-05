@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>การใช้ตารางจัดการฟอรัม</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: 'Prompt', sans-serif; /* เลือกเอาจากลิงค์ https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap */
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 50px;
+            margin: 1%;
+            padding: 4%;
+            max-width: 100%;
+        }
+    </style>
+</head>
+        nav {
+            margin: 0;
+            padding: 1;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            padding: 10px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+
+        }
+        nav a:hover {
+    background: #555;/* สีพื้นหลังของลิงก์เมื่อถูกชี้ */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+<body>
+<form action="check.php" method="post">
+    <caption><center>การใช้ฟอร์มรับข้อมูล</center></caption><br>
+    <table width="500" border="0" cellspacing="1" cellpadding="3" align="center">
+        <tr>
+            <td>ชื่อผู้ใช้งาน</td>
+            <td></td>
+            <td><input type="text" name="user" style="width: 300px;"></td>
+        </tr>
+        <tr>
+            <td>คำนำหน้า</td>
+            <td></td>
+            <td><input type="radio" name="Titlename" value="male"> นาย <input type="radio" name="Titlename" value="female"> นางสาว<input type="radio" name="Titlename" value="single-female"> นาง</td>
+        </tr>
+        <tr>
+            <td>ชื่อจริง</td>
+            <td></td>
+            <td><input type="text" name="firstname"style="width: 300px;"></td>
+        </tr>
+        <tr>
+            <td>นาม</td>
+            <td></td>
+            <td><input type="text" name="lastname"style="width: 300px;"></td>
+        </tr>
+        <tr>
+            <td>รหัสผ่าน</td>
+            <td></td>
+            <td><input type="password" name="password"style="width: 300px;"></td>
+        </tr>
+        <tr>
+            <td>เพศ</td>
+            <td></td>
+            <td><input type="radio" name="gender" value="male"> ชาย <input type="radio" name="gender" value="female"> หญิง</td>
+        </tr>
+
+        <tr>
+            <td>อายุ</td>
+            <td></td>
+            <td>
+                <select name="age" size="1">
+                    <option value="1">1-10</option>
+                    <option value="2">11-20</option>
+                    <option value="3">21-30</option>
+                    <option value="4">31-40</option>
+                    <option value="5">41-50</option>
+                    <option value="6">51-60</option>
+                    <option value="7">61 ขึ้นไป</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>เบอร์โทรศัพท์</td>
+            <td></td>
+            <td><input type="phone-number" name="phone-number"style="width: 300px;"></td>
+        </tr>
+        <tr>
+            <td>อีเมล</td>
+            <td></td>
+            <td><input type="E-mail" name="E-mail" style="width: 300px;"></td>
+        </tr>
+        <tr>
+            <td>ที่อยู่</td>
+            <td></td>
+            <td><input type="address" name="address" style="width: 300px; height: 80px;"></td>
+        </tr>
+        <tr>
+            <td>เงื่อนไข</td>
+            <td></td>
+            <td><input type="checkbox" name="conditions" value="yes">ข้าพเจ้ายอมรับและยินดีตามข้อตกลง</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <input type="submit" value="ตกลง" style="background-color: green; color: white; width: 100px; height: 40px; font-size: 16px;">
+                <input type="reset" value="ยกเลิก" style="background-color: red; color: white; width: 100px; height: 40px; font-size: 16px;">
+            </td>
+        </tr>
+    </table>
+</form>
+</br></br></br></br></br><center>Thai-Austrian วิทยาลัยเทคนิคสัตหีบ</br>นายศุภกฤต ก้องฐิติเดช รหัสนักศึกษา66209010038 ห้อง สท.2/2</br>
+E-mail 66209010038@tatc.ac.th </center>
+</body>
+</html>
